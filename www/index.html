@@ -1,0 +1,24 @@
+<html ng-app="appModule" ng-controller="appController">
+<head>
+    <title>Ace Test</title>
+    <script src="js/lib/angular.js"></script>
+    <script src="js/lib/ace.js"></script>
+    <script src="js/lib/ui-ace.js"></script>
+    <script src="js/controller.js"></script>
+    <link href="css/style.css" rel="stylesheet">
+</head>
+<body >
+  <div>
+    <div id="aceEditor" class="editor" ui-ace="{ 
+      useWrapMode : true,
+      showGutter: true,
+      mode: 'html', 
+      theme: 'monokai',   
+      onLoad: aceLoaded,
+      onChange: aceChanged 
+      }" 
+      ng-model="code">
+    </div>
+  </div>
+</body>
+</html>

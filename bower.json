@@ -1,0 +1,21 @@
+{
+  "name": "ace-test",
+  "version": "0.0.0",
+  "authors": [
+    "Alexander A. Ramírez M. <alexander.ramirez@synergy-gb.com>"
+  ],
+  "description": "Test the Ace Web editor",
+  "license": "Propietary",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "ace": "~1.2.2",
+    "angular": "~1.4.7",
+    "angular-ui-ace": "bower"
+  }
+}
