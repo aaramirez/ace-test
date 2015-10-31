@@ -11,7 +11,7 @@ angular.module('appModule', ['ui.ace'])
     };
 
     $scope.aceChanged = function(e) {
-      $scope.iframe.contentWindow.document.open();
+      $scope.iframe.contentWindow.document.open("text/html", "replace");
       $scope.iframe.contentWindow.document.write($scope.aceSession.getValue());
       $scope.iframe.contentWindow.document.close();
     };

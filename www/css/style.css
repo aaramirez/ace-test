@@ -1,3 +1,7 @@
+body {
+  background-color: #5f5f5f;
+}
+
 .top {
   width: 100%;
 }
@@ -48,6 +52,5 @@ div {
     top: 125px;
     left: 44px;
     border: 0;
-    background-color: white;
-    transition: opacity 1s ease-in-out;
+    background-color: #efefef;
 }
