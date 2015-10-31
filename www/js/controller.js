@@ -2,15 +2,12 @@ angular.module('appModule', ['ui.ace'])
   .controller("appController", ["$scope", function($scope) {
     $scope.code = "<h1>Hola Ace..!</h1>";
 
-    $scope.iframe = document.createElement('iframe');
-    document.body.appendChild($scope.iframe);;
+    $scope.iframe = document.getElementById('frame');
 
     $scope.aceLoaded = function(_editor) {
       $scope.aceSession = _editor.getSession();
       $scope.aceRenderer = _editor.renderer;
 
-      //$scope.aceRenderer.setShowPrintMargin(false);
-      //$scope.aceRenderer.setShowGutter(false);
     };
 
     $scope.aceChanged = function(e) {

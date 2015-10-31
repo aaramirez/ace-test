@@ -8,17 +8,32 @@
     <link href="css/style.css" rel="stylesheet">
 </head>
 <body >
-  <div>
-    <div id="aceEditor" class="editor" ui-ace="{ 
-      useWrapMode : true,
-      showGutter: true,
-      mode: 'html', 
-      theme: 'monokai',   
-      onLoad: aceLoaded,
-      onChange: aceChanged 
-      }" 
-      ng-model="code">
+  <div class="top">
+
+    <div class="sourceEditor">
+      <div class="sourceCode">
+        <div id="aceEditor" style="height: 624px;" ui-ace="{ 
+          useWrapMode : true,
+          showGutter: true,
+          mode: 'html', 
+          theme: 'monokai',   
+          onLoad: aceLoaded,
+          onChange: aceChanged 
+          }" 
+          ng-model="code">
+        </div>
+      </div>
     </div>
+
+    <div id="result" style="height: 312px;">
+      <div class="device">
+        <div class="screen">
+        <iframe id="frame" class="ng-isolate-scope">
+        </iframe>
+        </div>
+      </div>
+    </div>
+
   </div>
 </body>
 </html>
